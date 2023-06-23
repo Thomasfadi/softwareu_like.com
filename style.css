@@ -16,25 +16,41 @@ header{
     align-items: center;
     padding: 20px 100px;
 }
+
 header.sticky{
-    color: #ffffff;
+    color: #eeeeee;
+    transition: 0.5s ease;}
+.logo{
+    width: 50;
+    cursor: pointer;
 }
 .navigation  a{
     display: inline-block;
-    color: rgb(255, 255, 255);
+    color: rgb(212, 212, 212);
     text-decoration: none;
     font-size: 1,1 em;
     font-weight: 400;
     padding-left: 30px;
 }
 .navigation a:hover{
-    color: rgb(255, 255, 255);
+    color: white;
     transform: scale(1.3);
     transition: 0.5s ease;
 }
-section{
-    padding:100px 200px;
+header.stikey{
+    padding: 5px 100px;
+    background: #ffffff;
 }
+header.stikey a {
+    color: rgb(46, 46, 46);
+}
+header.stikey a:hover {
+    color: rgb(0, 0, 0);
+}
+section{
+    padding:100px 100px;
+}
+
 .Home{
     width: 300;
     min-height:100vh;
@@ -98,9 +114,219 @@ section{
     font-size: 2.2em;
     margin-bottom: 20px;
 }
-.cards.content{
+.cards h3{
     display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
+    justify-content: start;
+    color: #313131;
+    font-weight: 500;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.card{
+    width: 250px;
+    height: 200px;
+    display: inline-block;
+    border-radius: 20px;
+    padding: 15px 25px ;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin:10px 15px;
+    background-position: center;
+    background-size: cover;
+}
+
+.card1{
+    background: url(images/uiux.jpg);
+}
+.card2{
+    background: url(https://media.istockphoto.com/id/1344688156/photo/portrait-of-a-man-using-a-computer-in-a-modern-office.jpg?s=612x612&w=0&k=20&c=xQsoWWZXJ1ydmmCGgnHyuVYUc7BILG1FauoHcloDnG4=);
+}
+.card3{
+    background: url(images/server2jpg.jpg);
+}
+.card4{background: url(images/testing.jpg);}
+.card5{background: url(images/comunicationtower.jpg);}
+.card6{background: url(images/electromicanical.jpg);}
+.card7{background: url(images/Consultancy\ Experiences.jpg);}
+.card8{background: url(images/Desktop\ applications.jpg);}
+.card9{
+    background: url(images/mobile.png);
+}
+.card10{
+    background: url(images/webapplication.jpg);
+}
+.card_s :hover{
+    transform: scale(1.2);
+}
+
+.card_s h2{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+}
+.ceo{
+    background: url(https://coolbackgrounds.io/images/backgrounds/index/ranger-4df6c1b6.png);
+}
+.ceo h3 {
+color: #fff;
+}
+.ceo p{
+    color: #fff;
+}
+
+.Ceo {
+    display: flex;
+    justify-content: start;
+    color: #010812;
+    font-weight: 500;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.target:hover {
+    transform: scale(1.1);
+}
+
+.target .icon {
+    color: #3a6cf4;
+    font-size: 8em;
+    text-align: center;
+}
+.target {
+    background-color: #fff;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    padding: 20px;
+    margin: 15px;
+    transition: 0.7s ease;
+    width: 250px;
+    display: inline-block;
+    border-radius: 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin:10px 15px;
+}
+.icon1{
+    color: #0059ff;
+    font-size: 4em;
+    text-align:center;
+}
+.info h2{
+    display: inline;
+    color: #0077ff;
+    font-size: 1em;
+    font-weight:600;
+    margin: 10px;
+}
+.projects{
+    background: url(https://media.istockphoto.com/id/1365436662/photo/successful-partnership.jpg?b=1&s=612x612&w=0&k=20&c=7rCLdLKsiflXsLWf59S6w0u_rSPQZ9bqyspLqn8o8jg=);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+.main_button{
+    color: #fff;
+    background-color: #0059ff;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 10px 20px;
+    letter-spacing: 1px;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+.careers{
+    background: url(https://business.codecool.com/wp-content/uploads/2021/09/sigmund-Im_cQ6hQo10-unsplash-1024x683.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.careers h2{
+    color: #ffffff;
+}
+.careers p{
+    color: #ffffff;
+}
+.main_button:hover{
+    background-color: #004e86;
+    transform: scale(1.1);
+    transition: 1s ease;
+}
+@media (max-width:600px){
+    header{
+        padding: 12px 20px;
+    }
+    header.stikey{
+        padding: 12px 20px;
+    }
+
+    .navigation a{
+        padding-left: 5px;
+    }
+.section{
+    padding: 50px 20px;
+}
+    .title{
+        font-size: 1.8em;
+    }
+
+    .Home{
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        padding: 80px 20px;
+    }
+.Home h2{
+        font-size: 2em;
+    }
+.Home h3{
+        font-size: 2em;
+    }
+    .card_s{
+        flex-direction: column;
+        align-items: center;
+    }
+.icon2{
+    color: #010812;
+}
+}
+.careers{
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.co-icon a{
+    color: rgb(0, 0, 0);
+    font-size: 1.5em;
+    padding: 1px;
+    display: inline-block;
+    
+}
+.projects{
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+@media (max-width:641px){
+    body{
+        font-size: 12px;
+    }
+
+    .main-content h2{
+        font-size: 0.8em;
+    }
+
+    .main-content h3{
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width:400px){
+    body{
+        font-size: 10px;
+    }
 }
